@@ -2,10 +2,27 @@
 
 A beautiful, modern e-commerce web application for browsing and purchasing houseplants. Paradise Nursery brings nature indoors with a handpicked selection of air-purifying plants, aromatic herbs, and stunning flowers.
 
+[![CI](https://github.com/konethegreat/e-plantShopping/actions/workflows/ci.yml/badge.svg)](https://github.com/konethegreat/e-plantShopping/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-18-blue?logo=react)
 ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?logo=redux)
 ![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?logo=vite)
 ![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?logo=css3)
+
+## About this repository
+
+> **Learning project.** A front-end exercise: a small plant-shop storefront built with React, Redux Toolkit and Vite. It is a demo, not a real shop: there is no backend, no accounts and no payments, and **Checkout only shows a "Coming Soon!" alert**.
+
+| | |
+| --- | --- |
+| **Status** | Learning project kept as a working example. This is the **maintained copy** of the code (see "Relationship to Paradise-Nursery" below). |
+| **Origin** | IBM Skills Network publishes a starter template with this repository's name, [ibm-developer-skills-network/e-plantShopping](https://github.com/ibm-developer-skills-network/e-plantShopping) (Apache-2.0). The repository name, the component names (`ProductList`, `CartItem`, `AboutUs`) and the Redux reducer names (`addItem`, `removeItem`, `updateQuantity`) match that template, so this repository appears to be a solution to that exercise. It is **not** a GitHub fork and its history does not contain the template's files; the file layout, plant data, styling and routing differ from the template. |
+| **Authorship** | The 19 commits dated 17 May 2026 are authored by Kone Tshivhinda (`git log`). The later fixes, tests, CI workflow and documentation updates (October 2026) were prepared with Claude (Anthropic) and carry `Co-Authored-By` trailers. |
+| **Checks** | `npm run lint`, `npm test` (24 tests: the Redux cart slice and the UI flows) and `npm run build` pass locally and in CI (badge above). |
+| **Demo** | None hosted. GitHub Pages is not enabled for this repository. |
+
+### Relationship to Paradise-Nursery
+
+[konethegreat/Paradise-Nursery](https://github.com/konethegreat/Paradise-Nursery) contains the same application. Its 18 commits are all part of this repository's history, and at that point (`bff1ee5`) the two source trees were identical. This repository then renamed `src/redux/CartSlice.js` to `CartSlice.jsx` (no content change) and received the later work, so it is the version to use. Paradise-Nursery is kept for reference and gets documentation updates only.
 
 ---
 
