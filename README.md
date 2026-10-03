@@ -61,40 +61,47 @@ A demo plant-shop web application for browsing houseplants and filling a shoppin
 
 | Technology | Purpose |
 |-----------|---------|
-| **React** | UI framework |
-| **Redux Toolkit** | State management |
-| **React Router** | Client-side routing |
-| **Vite** | Build tool & dev server |
-| **CSS3** | Styling with modern features |
-| **ESLint** | Code quality |
+| **React** 19 | UI framework |
+| **Redux Toolkit** + React-Redux | State management (the cart) |
+| **React Router** 7 | Client-side routing |
+| **Vite** 8 | Build tool & dev server |
+| **CSS3** | Plain CSS in `src/App.css` |
+| **ESLint** | Linting |
+| **Vitest** + Testing Library (jsdom) | Unit and UI tests |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-paradise-nursery/
+e-plantShopping/
+├── .github/workflows/ci.yml        # CI: lint, test, build
+├── public/                         # Static assets (favicon, icons)
 ├── src/
 │   ├── components/
-│   │   ├── Header.jsx              # Navigation bar
-│   │   ├── Layout.jsx              # Page layout wrapper
-│   │   ├── LandingPage.jsx         # Hero landing page
-│   │   ├── ProductList.jsx         # Plant catalog
-│   │   ├── CartItem.jsx            # Shopping cart page
-│   │   └── AboutUs.jsx             # Company information
+│   │   ├── Header.jsx              # Navigation bar with the cart badge
+│   │   ├── ProductList.jsx         # Plant catalogue (/products)
+│   │   ├── CartItem.jsx            # Shopping cart page (/cart)
+│   │   ├── AboutUs.jsx             # About Us content (/about)
+│   │   ├── LandingPage.jsx         # Not used: App.jsx renders its own landing page
+│   │   └── Layout.jsx              # Not used by the router
 │   ├── data/
-│   │   └── plants.js               # Plant catalog data
+│   │   └── plants.js               # Plant catalogue data (15 plants)
 │   ├── redux/
 │   │   ├── store.js                # Redux store configuration
-│   │   └── CartSlice.js            # Cart state & actions
-│   ├── App.jsx                     # Main app component
-│   ├── App.css                     # Global styles
-│   ├── main.jsx                    # Entry point
-│   └── index.css                   # Base styles
-├── public/                         # Static assets
-├── package.json                    # Dependencies
-├── vite.config.js                  # Vite configuration
-└── README.md                       # This file
+│   │   ├── CartSlice.jsx           # Cart state, actions and selectors
+│   │   └── CartSlice.test.js       # Unit tests for the cart slice
+│   ├── test/setup.js               # Vitest setup (jest-dom matchers, cleanup)
+│   ├── App.jsx                     # Routes and the landing page
+│   ├── App.test.jsx                # UI tests: catalogue, cart, navigation
+│   ├── App.css                     # Styles
+│   ├── index.css                   # Empty
+│   └── main.jsx                    # Entry point (Redux Provider)
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js                  # Vite and Vitest configuration
+└── README.md
 ```
 
 ---
