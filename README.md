@@ -109,20 +109,20 @@ e-plantShopping/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js 24 (what CI uses) or newer. The declared minimums are Vite 8: 20.19+ or 22.12+, and jsdom 30 (used by the tests): 22.22.2+, 24.15+ or 26+. The commands below were run on Node 26.8.1 locally and Node 24 in CI.
+- npm
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd paradise-nursery
+   git clone https://github.com/konethegreat/e-plantShopping.git
+   cd e-plantShopping
    ```
 
-2. **Install dependencies**
+2. **Install dependencies** (installs exactly what `package-lock.json` lists)
    ```bash
-   npm install
+   npm ci
    ```
 
 3. **Start the development server**
@@ -131,7 +131,7 @@ e-plantShopping/
    ```
 
 4. **Open your browser**
-   - Navigate to `http://localhost:5173`
+   - Open the URL Vite prints, normally `http://localhost:5173`
 
 ### Build for Production
 
@@ -139,7 +139,7 @@ e-plantShopping/
 npm run build
 ```
 
-The optimized build will be created in the `dist/` directory.
+The optimized build will be created in the `dist/` directory. `npm run preview` serves it locally.
 
 ---
 
@@ -149,6 +149,8 @@ The optimized build will be created in the `dist/` directory.
 - `npm run build` - Create production build
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint to check code quality
+- `npm test` - Run the Vitest suite once (24 tests: Redux cart slice and UI flows)
+- `npm run deploy` - Build, then publish `dist/` to a `gh-pages` branch with the `gh-pages` tool. Not run or verified: GitHub Pages is not enabled for this repository, and the build uses root-relative asset paths, so it would also need Vite's `base` and the router's `basename` set for a sub-path such as `/e-plantShopping/`.
 
 ---
 
