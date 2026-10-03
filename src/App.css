@@ -499,7 +499,7 @@ body {
 }
 
 .background-image {
-  background-image: url('/https://plantify.co.za/cdn/shop/files/Shopify_slider_2880px_x_1255_37_b76faaa3-c7c7-45bc-99ec-da823d75519e.jpg?v=1685448161&width=1800');  /* change to your own image */
+  background-image: url('https://plantify.co.za/cdn/shop/files/Shopify_slider_2880px_x_1255_37_b76faaa3-c7c7-45bc-99ec-da823d75519e.jpg?v=1685448161&width=1800');  /* change to your own image */
   background-size: cover;
   background-position: center;
   height: 100vh;
