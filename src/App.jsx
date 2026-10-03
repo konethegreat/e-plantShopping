@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import CartItem from './components/CartItem';
+import AboutUs from './components/AboutUs';
+import Header from './components/Header';
 import './App.css';
 
 function LandingPage() {
@@ -24,6 +26,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="/cart" element={<CartItem />} />
+        <Route path="/about" element={<><Header /><AboutUs /></>} />
       </Routes>
     </BrowserRouter>
   );
