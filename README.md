@@ -166,18 +166,21 @@ The optimized build will be created in the `dist/` directory. `npm run preview` 
 
 The app uses Redux Toolkit to manage the shopping cart state:
 
-- **Cart Slice**: Handles add/remove items, quantity management, and totals
-- **Actions**: `addToCart`, `removeFromCart`, `incrementQuantity`, `decrementQuantity`
+- **Cart Slice** (`src/redux/CartSlice.jsx`): state is `{ cart: { items: [{ ...plant, quantity }] } }`
+- **Actions**: `addItem` (adds a plant with quantity 1, or increments it if already present), `removeItem` (by plant id), `updateQuantity` (`{ id, quantity }`; a quantity of 0 or less removes the item)
 - **Selectors**: `selectCartItems`, `selectTotalQuantity`, `selectTotalCost`
+- The cart is not persisted: reloading the page empties it.
 
 ---
 
 ## 📱 Navigation
 
-- **Home** (`/`) - Landing page with company introduction
+- **Home** (`/`) - Landing page with a **Get Started** button
 - **Plants** (`/products`) - Browse all plant categories
-- **About Us** (`/about`) - Learn about Paradise Nursery
+- **About Us** (`/about`) - Short about page
 - **Cart** (`/cart`) - View and manage shopping cart
+
+The navigation bar (Home, Plants, About Us, Cart) is shown on every page except the landing page.
 
 ---
 
