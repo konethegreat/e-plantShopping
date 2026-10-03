@@ -24,6 +24,16 @@ A demo plant-shop web application for browsing houseplants and filling a shoppin
 
 [konethegreat/Paradise-Nursery](https://github.com/konethegreat/Paradise-Nursery) contains the same application. Its 18 commits are all part of this repository's history, and at that point (`bff1ee5`) the two source trees were identical. This repository then renamed `src/redux/CartSlice.js` to `CartSlice.jsx` (no content change) and received the later work, so it is the version to use. Paradise-Nursery is kept for reference and gets documentation updates only.
 
+## Screenshots
+
+![Landing page](docs/screenshots/landing.png)
+
+![Plant catalogue with two plants added to the cart](docs/screenshots/catalogue.png)
+
+![Shopping cart with two plants, one of them twice](docs/screenshots/cart.png)
+
+Taken from the dev server on 3 October 2026 (headless Edge, 1280x800). The app hot-links its plant photos and the landing page background from third-party websites; in these screenshots they are replaced by plain placeholders so that no third-party images are stored in this repository.
+
 ---
 
 ## ✨ Features
@@ -76,6 +86,7 @@ A demo plant-shop web application for browsing houseplants and filling a shoppin
 ```
 e-plantShopping/
 ├── .github/workflows/ci.yml        # CI: lint, test, build
+├── docs/screenshots/               # Screenshots used in this README
 ├── public/                         # Static assets (favicon, icons)
 ├── src/
 │   ├── components/
