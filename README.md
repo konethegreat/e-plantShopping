@@ -154,37 +154,11 @@ The optimized build will be created in the `dist/` directory. `npm run preview` 
 
 ---
 
-## 🎯 Key Features Implemented
-
-✅ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile  
-✅ **State Management** - Redux Toolkit for efficient cart management  
-✅ **Component Architecture** - Modular, reusable components  
-✅ **Client-Side Routing** - Smooth navigation between pages  
-✅ **Modern Styling** - CSS3 with gradients, animations, and transitions  
-✅ **User Experience** - Intuitive interface with visual feedback  
-✅ **Performance** - Optimized with Vite for fast builds  
-
----
-
-## 🌳 Plant Categories
-
-### Air Purifying Plants
-Natural air cleaners that improve indoor air quality and create a healthier home environment.
-
-### Aromatic Plants
-Fragrant herbs and plants perfect for your kitchen, garden, or living space.
-
-### Flowering Plants
-Beautiful blooming plants that add color and elegance to any room.
-
----
-
 ## 🎨 Design Highlights
 
 - **Color Palette**: Forest greens (#2d6a4f, #40916c, #52b788) with warm accents (#f4a261)
-- **Typography**: Clean, modern fonts for excellent readability
-- **Animations**: Smooth transitions and hover effects for enhanced interactivity
-- **Layout**: Centered, spacious design with clear visual hierarchy
+- **Typography**: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
+- **Animations**: CSS transitions and hover effects on cards and buttons
 
 ---
 
