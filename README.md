@@ -195,7 +195,29 @@ The navigation bar (Home, Plants, About Us, Cart) is shown on every page except 
 
 ---
 
-## 🚀 Future Enhancements
+## ⚠️ Known Limitations
+
+- **No backend, accounts or payments.** Checkout shows an alert, and the cart exists only in browser memory.
+- **Photos are hot-linked** from 12 different third-party hosts (their licence terms were not checked) and can change or disappear. All 15 plant photos and the landing page background returned HTTP 200 on 3 October 2026.
+- **Narrow screens:** the plant grid reflows, but there are no CSS media queries and the navigation bar does not fit a phone-width screen (at 390px wide the page scrolls horizontally).
+- **Not deployed:** `homepage` and `npm run deploy` target GitHub Pages, which is not enabled, and the build uses root-relative asset paths.
+- **Unused files:** `components/LandingPage.jsx` and `components/Layout.jsx`.
+- **Not audited:** accessibility and browser support.
+- **Dependencies:** `npm audit` reports no advisories for production dependencies and 5 high ones in the `gh-pages` deploy tool (dev only) as of 3 October 2026.
+
+---
+
+## ➡️ Possible Next Steps
+
+1. Make the navigation bar fit small screens (wrap the links or add a media query).
+2. Replace the hot-linked photos with images that are owned or licensed for reuse.
+3. Either publish a demo (set Vite's `base` and the router's `basename`, enable GitHub Pages) or remove the deploy script.
+4. Use or delete the two unused components.
+5. Add a `LICENSE` file that matches the licence statement below.
+
+---
+
+## 🚀 Longer-term Ideas (not started)
 
 - User authentication & accounts
 - Product reviews and ratings
