@@ -1,11 +1,11 @@
 # 🌿 Paradise Nursery
 
-A beautiful, modern e-commerce web application for browsing and purchasing houseplants. Paradise Nursery brings nature indoors with a handpicked selection of air-purifying plants, aromatic herbs, and stunning flowers.
+A demo plant-shop web application for browsing houseplants and filling a shopping cart. "Paradise Nursery" is the shop name used in the app; its catalogue has 15 plants in three categories: air-purifying plants, aromatic herbs and flowering plants.
 
 [![CI](https://github.com/konethegreat/e-plantShopping/actions/workflows/ci.yml/badge.svg)](https://github.com/konethegreat/e-plantShopping/actions/workflows/ci.yml)
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?logo=redux)
-![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?logo=vite)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)
 ![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?logo=css3)
 
 ## About this repository
@@ -29,38 +29,31 @@ A beautiful, modern e-commerce web application for browsing and purchasing house
 ## ✨ Features
 
 ### 🏠 Landing Page
-- Eye-catching hero section with gradient background
-- Compelling call-to-action buttons
-- Easy navigation to explore plants and learn more about the company
+- Full-screen hero with a background photo, a welcome message and a **Get Started** button that opens the plant catalogue
 
 ### 🌱 Plant Catalog
 - Browse plants organized by category:
   - **Air Purifying**: Snake Plant, Spider Plant, Pothos, Peace Lily, Dracaena
   - **Aromatic**: Lavender, Rosemary, Mint, Basil, Thyme
   - **Flowering**: Anthurium, African Violet, Orchid, Begonia, Geranium
-- Responsive grid layout with smooth hover effects
-- Detailed pricing information
-- Add to cart functionality with duplicate prevention
+- Grid of plant cards that reflows to the available width, with hover effects
+- Price shown for each plant
+- **Add to Cart** button per plant; once a plant is in the cart its button shows "Added" and is disabled
 
 ### 🛒 Shopping Cart
-- Add/remove items from cart
-- Adjust quantities with increment/decrement buttons
-- Real-time cart total and item count
-- Empty cart messaging with helpful guidance
-- Persistent cart badge in navigation
+- Add plants from the catalogue and remove them with **Delete**
+- **+** / **-** buttons change the quantity; decreasing it to 0 removes the plant
+- "Total Items" and "Total Amount" update as the cart changes
+- Shows "Your cart is empty." when there is nothing in the cart
+- The navigation bar shows a badge with the number of items in the cart; the cart lives in memory only and is lost when the page is reloaded
+- **Continue Shopping** returns to the catalogue; **Checkout** only shows a "Coming Soon!" alert
 
 ### 📖 About Us Page
-- Company mission and values
-- Historical background
-- Benefits and highlights
-- Professional design with organized sections
+- A short page opened from the **About Us** link in the navigation bar: a welcome sentence and a one-sentence mission statement
 
 ### 🎨 Modern UI/UX
-- Beautiful gradient design with green color scheme
-- Smooth animations and transitions
-- Responsive design for all screen sizes
-- Professional typography and spacing
-- Interactive hover effects and visual feedback
+- Green colour scheme with a gradient navigation bar and gradient buttons
+- CSS transitions and hover effects on cards and buttons, a fade-in on the landing page and a pulsing cart badge
 
 ---
 
