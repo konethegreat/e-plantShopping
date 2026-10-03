@@ -243,14 +243,10 @@ The navigation bar (Home, Plants, About Us, Cart) is shown on every page except 
 
 This project is open source and available under the MIT License.
 
+No `LICENSE` file is included in the repository at the moment.
+
 ---
 
 ## 🤝 Support
 
-For questions or issues, please reach out or create an issue in the repository.
-
----
-
-**Made with 🌱 by the Paradise Nursery Team**
-
-Bringing nature home since 2015.
+For questions or issues, please create an issue in the repository.
